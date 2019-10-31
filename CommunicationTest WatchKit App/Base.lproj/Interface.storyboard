@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TKJ-vR-82D">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -82,15 +82,16 @@
             </objects>
             <point key="canvasLocation" x="555" y="31.5"/>
         </scene>
-        <!--Screen2 Sample-->
+        <!--Interface Controller-->
         <scene sceneID="rSw-iR-0SS">
             <objects>
-                <controller id="TKJ-vR-82D" customClass="Screen2Sample" customModule="CommunicationTest_WatchKit_Extension">
+                <controller id="TKJ-vR-82D" customClass="InterfaceController" customModule="CommunicationTest_WatchKit_Extension">
                     <items>
+                        <label alignment="left" text="Player chose" id="pL2-gh-XzN"/>
                         <button width="1" alignment="left" title="Give me a name" id="aem-N8-vQs">
                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="selectNameButtonPressed" destination="TKJ-vR-82D" id="PWX-4J-nLv"/>
+                                <action selector="GiveName" destination="TKJ-vR-82D" id="XWy-2u-Crt"/>
                             </connections>
                         </button>
                         <imageView alignment="center" id="YVj-81-CS0"/>
@@ -105,6 +106,7 @@
                     </items>
                     <connections>
                         <outlet property="nameLabel" destination="hsS-ha-cvx" id="UZr-zS-n0S"/>
+                        <outlet property="playerChoice" destination="pL2-gh-XzN" id="edQ-zZ-1kR"/>
                         <outlet property="pokemonImageView" destination="YVj-81-CS0" id="xZn-R5-7aP"/>
                     </connections>
                 </controller>

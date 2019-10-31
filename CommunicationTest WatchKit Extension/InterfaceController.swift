@@ -26,6 +26,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     @IBOutlet var pokemonName: WKInterfaceLabel!
     
+    @IBOutlet var playerChoice: WKInterfaceLabel!
     
     // MARK: Delegate functions
     // ---------------------
@@ -42,9 +43,9 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
        // let messageBody = message["course"] as! String
       //  messageLabel.setText(messageBody)
         let messageName = message["name"] as! String
-        pokemonName.setText(messageName)
+       playerChoice.setText(messageName)
         _ = message["name"] as! String
-        pokemonName.setText(messageName)
+        playerChoice.setText(messageName)
         
     }
     
@@ -125,5 +126,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         print("Hibernate button pressed")
     }
     
+    @IBAction func GiveName() {
+        
+    }
     
 }
